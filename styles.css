@@ -1,0 +1,79 @@
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to bottom, #fdf6f9, #d8e9f6);
+  color: #3b2f2f;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+header {
+  background: linear-gradient(to right, #c77dff, #9d4edd);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border-bottom: 5px solid #c77dff;
+}
+
+main {
+  max-width: 850px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.fairy-border {
+  border: 3px dashed #c77dff;
+  border-radius: 20px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background: rgba(249, 237, 255, 0.6);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #9d4edd;
+  color: white;
+  margin-top: 2rem;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.sparkle {
+  animation: sparkleAnim 1.5s infinite;
+}
+
+@keyframes sparkleAnim {
+  0% { color: #fff; text-shadow: 0 0 5px #fff, 0 0 10px #c77dff; }
+  50% { color: #c77dff; text-shadow: 0 0 10px #9d4edd, 0 0 20px #fff; }
+  100% { color: #fff; text-shadow: 0 0 5px #fff, 0 0 10px #c77dff; }
+}
+
+.petalo {
+  position: absolute;
+  top: -50px;
+  font-size: 1.5rem;
+  opacity: 0.8;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(120vh) rotate(360deg);
+    opacity: 0;
+  }
+}
